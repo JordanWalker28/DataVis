@@ -1,0 +1,46 @@
+<html>
+<head></head>
+<body>
+<div id="myPie" margin="50%"></div>
+<script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+<!-- <script src="https://d3js.org/d3-selection.v1.js"></script> -->
+
+<script src="d3pie.js"></script>
+<script src="d3.min.js"></script>
+<script>
+    var pie = new d3pie("myPie", {
+    header: {
+        title: {
+            text: "Jordan Walkers coding languages"
+        }
+    },
+    data: {
+        content: [
+            { label: "JavaScript", value: 50 },
+            { label: "SML", value: 20 },
+            { label: "Java", value: 80},
+            { label: "Python", value: 80},
+            { label: "C", value: 20},
+            { label: "C++", value: 10},
+            { label: "PHP", value: 30},
+            { label: "CSS", value: 90},
+            { label: "HTML", value: 90},
+            { label: "Assembly", value: 4},
+        ]
+     },
+
+    //Here further operations/animations can be added like click event, cut out the clicked pie section.
+     callbacks: {
+        onMouseoverSegment: function(info) {
+            console.log("mouse in", info);
+        },
+        onMouseoutSegment: function(info) {
+            console.log("mouseout:", info);
+        }
+    }
+
+});
+
+</script>
+</body>
+</html>
