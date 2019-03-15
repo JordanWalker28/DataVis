@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MainDash</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/simplecss.css">
+	<link rel="stylesheet" type="text/css" href="css/barchart-v001.css"/>
+	<link rel="stylesheet" href="css/footer-basic-centered.css">
+	<link rel="stylesheet" href="css/scatter.css">
+	<link rel="stylesheet" href="css/pack_v001.css">
+	<script type="text/javascript" src="d3/d3.v4.js"></script>
+	<script src="lib/model/ref14model_v002.js"></script> 
+	<script src="lib/controller/controller.js"></script>
+	<script src="lib/views/barchart.js"></script> 
+	<script src="lib/views/scatterchart.js"></script> 
+	<script src="lib/views/piechart.js"></script>
+	<script src="lib/views/sunburst.js"></script>
+</head>
+
+<body>
+<div class="wrapper" id="wrap">
+ <div id = "newpost">
+	<div class = "topwrap">
+		<div id = "mainItem">
+			<h3>Select Topic:</h3>
+			<h3>University with Topic with 4*</h3>
+			<div id="sequence"></div>
+			<div id="sunburstDiv2"></div>
+		</div>
+	</div>
+
+	<div class ="middlewrap">
+		<div class="box a">
+			<h3>Word Count of Each Institution</h3>
+			<button type="button" onclick="pie2.reverseSortByDataField()">Sort</button> 
+			<button type="button" onclick="pie2.sortByKey()">Sort by Key</button> 
+			<div ID=piechartdiv2></div>
+			<div id="explanation" style="visibility: hidden;">
+			</div>
+		</div>
+
+		<div class="box b">
+			<h3>Research Staff For Topic in Each University</h3>
+			<button type="button" onclick="scatter3.reverseSortByDataField()">Sort</button> 
+			<button type="button" onclick="scatter3.sortByKey()">Sort by Key</button> 
+			<div ID=scatterchart3Div></div>
+		</div>		
+		</div>
+  	</div>
+
+  	<div class ="middlewrap">
+		<div class="box a">
+			<button type="button" onclick="bc3.reverseSortByDataField()">Sort</button> 
+			<button type="button" onclick="bc3.sortByKey()">Sort by Key</button> 
+			<h3>University with UoA 4* Value</h3>
+			<div ID=barchart3Div></div>
+		</div>
+
+		<div class="box b">
+					<div id = "mainItem">
+			<h3>Topic Weights For University</h3>
+			<button type="button" onclick="bc4.reverseSortByDataField()">Sort</button> 
+			<button type="button" onclick="bc4.sortByKey()">Sort by Key</button> 
+			<div ID=barchart4Div></div>
+		</div>
+		</div>		
+  	</div>
+ </div>
+
+<footer class="footer-basic-centered">
+			<p class="footer-company-motto">The "REF"ermandation</p>
+			<p class="footer-company-name">&copy;Jordan Walker Refermandation Task 2018</p>
+</footer>
+
+</div>
+</body>
+
+</html>

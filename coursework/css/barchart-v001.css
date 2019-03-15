@@ -1,0 +1,47 @@
+
+
+/*==============================================
+ *
+ * CSS Stylesheet for general barchart  
+ *
+ * 04/09/2018	mjc	Created
+ *===============================================*/
+ 
+/*Watch out for the spaces below (space = descendant relationship, no-space = AND) */
+/* note '.' denotes class, '#' denotes ID */
+.barchart .bars.enterSelection  { /* Select decendants of class 'barchart' elements where the descendants  are both of class  'bars'  AND  class 'enterSelection' */
+	fill: #444;
+	stroke: gray;
+	stroke-width: 1;
+	opacity: 0.5;
+}		
+
+.barchart .bars.updateSelection {
+	fill: red;
+	stroke: gray;
+	stroke-width: 1;
+	opacity: 0.5;
+}		
+
+.barchart .bars.exitSelection {
+	fill: gray;
+	stroke: gray;
+	stroke-width: 1;
+	opacity: 0.5;
+}	
+
+.barchart .bars.highlight {
+	fill: yellow;
+	stroke: black;
+	stroke-width: 2;
+	opacity: 1.0;
+}	
+
+
+/*		.barchart .bars:hover{
+	stroke: black;
+	stroke-width: 2;
+	opacity: 1.0;
+}
+*/
+	
